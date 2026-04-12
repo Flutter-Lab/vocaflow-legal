@@ -92,7 +92,7 @@
       <section class="hero">
         <h1>Privacy Policy</h1>
         <p class="tag">VocaPal</p>
-        <p class="small">Effective date: 2026-03-25</p>
+        <p class="small">Effective date: 2026-04-11</p>
       </section>
 
       <div class="grid">
@@ -111,7 +111,11 @@
 
         <section class="card">
           <h2>Information We Collect</h2>
-          <p>VocaPal does not require account creation or login.</p>
+          <p>
+            VocaPal can be used without creating an account. Optional Google
+            Sign-in is available to enable cloud backup and sync of your
+            vocabulary across devices.
+          </p>
           <p>
             We do not intentionally collect personal identifiers such as your
             name, phone number, or home address.
@@ -132,6 +136,12 @@
               Anonymous lookup data (words, meanings, and examples) cached
               locally on your device and remotely in a shared cloud database to
               improve lookup speed for all users
+            </li>
+            <li>
+              If you sign in: your Firebase user ID, vocabulary list, app
+              preferences, and daily activity data synced to a private,
+              per-account cloud database so you can access your data across
+              devices
             </li>
             <li>
               Feedback you submit in the app (for example bug reports and
@@ -248,8 +258,9 @@
               >
             </li>
             <li>
-              Firebase (Google): used for anonymous analytics, cloud dictionary
-              cache, and submitted user feedback storage
+              Firebase (Google): used for optional sign-in (Firebase Auth),
+              anonymous analytics, cloud dictionary cache, per-user cloud sync
+              (signed-in users only), and submitted user feedback storage
             </li>
             <li>
               RevenueCat:
@@ -304,10 +315,18 @@
             personally identifiable information.
           </p>
           <p>
+            <b>Cloud sync (signed-in users):</b> If you sign in with Google,
+            your vocabulary, preferences, and daily activity data are stored in
+            a private Firebase Firestore database associated with your account.
+            This data is accessible only to you and is used solely to sync your
+            progress across devices.
+          </p>
+          <p>
             If you submit feedback in the app, that feedback is sent to a secure
             cloud database (Firebase Firestore) so the developer can review and
             improve the app. This may include the feedback text, feedback type,
-            app version, and timestamp.
+            app version, and timestamp. Submitted feedback is automatically
+            deleted after 90 days.
           </p>
           <p>
             Subscription transaction metadata and entitlement state are retained
@@ -341,7 +360,7 @@
         </section>
 
         <section class="card">
-          <h2>Your Choices</h2>
+          <h2>Your Rights and Choices</h2>
           <ul>
             <li>You can stop microphone access in your device settings.</li>
             <li>
@@ -361,6 +380,15 @@
             <li>
               You can contact us to request removal of submitted feedback where
               reasonably possible.
+            </li>
+            <li>
+              <b>Delete Account (right to erasure):</b> Signed-in users can
+              permanently delete their account and all associated cloud data
+              (vocabulary, preferences, daily activity) directly from
+              <em>Settings → Delete Account</em>. This action is irreversible.
+              Local device data is also wiped at the same time. Note: submitted
+              feedback records are stored anonymously and cannot be linked back
+              to a deleted account.
             </li>
           </ul>
         </section>
